@@ -3,7 +3,7 @@ import threading
 from queue import Queue
 
 url = "https://discord.com/api/v9/auth/login"
-max_threads = 7  # Maksimum eşzamanlı işlem sayısı
+max_threads = 2  # Maksimum eşzamanlı işlem sayısı
 
 def login(email, password, result_queue):
     data = {
